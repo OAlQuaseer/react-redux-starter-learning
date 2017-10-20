@@ -2,6 +2,7 @@ import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 
+
 export default {
   resolve: {
     extensions: ['*', '.js', '.jsx', '.json']
@@ -96,7 +97,7 @@ export default {
       },
       {
         test: /(\.css|\.scss|\.sass)$/,
-        exclude: /node_modules/,
+        //exclude: ,
         use: [
           'style-loader',
           {
