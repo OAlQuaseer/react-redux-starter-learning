@@ -7,6 +7,8 @@ import NotFoundPage from "./../notfoundpage/NotFoundPage";
 import AboutPage from "./../about/AboutPage";
 import Header from "./../common/Header";
 import Footer from "./../common/Footer";
+import CoursesPage from "./../courses/CoursesPage";
+import ManageCoursePage from './../courses/ManageCoursePage';
 
 
 // This is a class-based component because the current
@@ -25,6 +27,9 @@ class App extends React.Component {
           {/*<Route path="/fuel-savings" component={FuelSavingsPage} />*/}
           <Route path="/about" component={AboutPage} />
           <Route path="/404" component={NotFoundPage} />
+          <Route path="/courses" component={CoursesPage} />
+          <Route path="/course" component={ManageCoursePage} />
+          <Route path="/course/:id" component={ManageCoursePage} />
           <Route component={NotFoundPage} />
         </Switch>
 

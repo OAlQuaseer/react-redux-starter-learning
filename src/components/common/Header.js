@@ -1,9 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import {TabMenu} from "primereact/components/tabmenu/TabMenu";
-import {Button} from 'primereact/components/button/Button';
-
-
 
 const Header = ()=>{
   const activeStyle = {color:"blue"};
@@ -23,6 +20,8 @@ const Header = ()=>{
     <NavLink exact to="/" activeStyle={activeStyle}>Home</NavLink>
     {' | '}
     <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
+    {' | '}
+    <NavLink to="/courses" activeStyle={activeStyle}>Courses</NavLink>
     {' | '}
     <NavLink to="/404" activeStyle={activeStyle}>Bad page</NavLink>
   </div>
